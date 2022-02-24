@@ -1,0 +1,71 @@
+footer{
+    display: block;
+    clear: both;
+    height: auto;
+    position: relative;
+    background-color: black;
+    margin-bottom: 0%;
+    max-width: 100%;
+}
+.option>a{
+    color: white;
+    font-variant: small-caps;
+    text-decoration: none;
+    font-size: 2vw;
+    margin: 2%;
+    margin-top: 0.5%;
+}
+.option{
+    margin-bottom: 2%;
+}
+.option>a:hover{
+    font-size: 3vw;
+}
+.fb-page{
+    margin-left: 2%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.info{
+    color: white;
+    font-size: 2vw;
+}
+footer>.info>.container{
+    position: relative;
+    display: block;
+    padding-bottom: 75%;
+    overflow: hidden;
+    height: 0;
+}
+footer>.info>.container>iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.info{
+    height: auto;
+    color: white;
+}
+
+.chiane {
+    display: flex;
+    justify-content: space-between;
+}
+.chiane div {
+    width: 100%;
+}
+.fa-send-back {
+    color: black;
+}
+.container-page{
+    position: relative;
+    display: block;
+    padding-bottom: 40.1%;
+    overflow: hidden;
+    height: 0;
+}

@@ -1,0 +1,223 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-header.css">
+    <link rel="stylesheet" href="./css/style-nav.css">
+    <link rel="stylesheet" href="./css/style-home-article.css">
+    <link rel="stylesheet" href="./css/style-home-aside.css">
+    <link rel="stylesheet" href="./css/style-footer.css">
+    <title>Kay Sport</title>
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ef555f2380.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0&appId=1114480602426398&autoLogAppEvents=1"
+        nonce="QMsKw9lX"></script>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./img/logo.jpg"> KAY SPORT</a>
+        </div>
+        <div class="content-1">
+            <div class="log-in">
+                <a href="./login.html">
+                    <i class="fa-solid fa-user"></i> Đăng Nhập
+                </a>
+            </div>
+            <div class="group-search">
+                <input type="text" placeholder="Tìm Kiếm">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu" align="center">
+            <li><a href="./index.html">Trang chủ</a> </li>
+            <li>
+                <a href="#2">Thể thao</a>
+                <ul>
+                    <li><a href="#">Bóng đá Việt Nam</a></li>
+                    <li><a href="#">Tennis</a></li>
+                    <li><a href="#">Bóng bàn</a></li>
+                    <li><a href="#">Bóng đá thế giới</a></li>
+                </ul>
+            </li>
+            <li><a href="#3">Video</a></li>
+            <li><a href="./scores.html" target="_blank">Bảng xếp hạng</a></li>
+            <li><a href="#5">TV</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <div class="as">
+            <div class="remember">
+                Bóng đá thế giới
+            </div>
+            <ul class="group">
+                <li>
+                    <a href="./news/new1.html" target="_blank">Beckham, Di Maria và top sao từng khoác áo Real lẫn PSG</a>
+                    <hr />
+                </li>
+                <li>
+                    <a href="/news/new2.html" target="_blank">Mbappe ra điều kiện để gia hạn hợp đồng với PSG</a>
+                    <hr />
+                </li>
+                <li>
+                    <a href="./news/new3.html" target="_blank">Bruno Fernandes đổ dầu vào lửa trong cuộc chiến quyền lực ở MU</a>
+                </li>
+            </ul>
+        </div>
+        <div class="as">
+            <div class="remember">
+                Bóng đá Việt Nam
+            </div>
+            <ul class="group">
+                <li>
+                    <a href="./news/new1.html">Beckham, Di Maria và top sao từng khoác áo Real lẫn PSG</a>
+                    <hr />
+                </li>
+                <li>
+                    <a href="/news/new2.html">Mbappe ra điều kiện để gia hạn hợp đồng với PSG</a>
+                    <hr />
+                </li>
+                <li>
+                    <a href="./news/new3.html">Bruno Fernandes đổ dầu vào lửa trong cuộc chiến quyền lực ở MU</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <article>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./img/new1/di-maria.jpg" style="width:100%">
+                <div class="text"><a href="./news/new1.html">Beckham, Di Maria và top sao từng khoác áo Real lẫn PSG</a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./img/new2/8971256cbc2e55700c3f.jpg" style="width:100%">
+                <div class="text"><a href="./news/new2.html">Mbappe ra điều kiện để gia hạn hợp đồng với PSG</a></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./img/new3/maguire-ronaldo-man-united_ntqp.jpeg" style="width:100%">
+                <div class="text"><a href="./news/new3.html">Bruno Fernandes đổ dầu vào lửa trong cuộc chiến quyền lực ở
+                        MU</a></div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <h2>Bóng đá thế giới</h2>
+        <hr />
+        <div class="box">
+            <a href="./news/new1.html" target="_blank"><img align="left" src="./img/new1/hakimi-beckham-di-maria.jpg"
+                    alt="">Beckham, Di Maria và top sao từng khoác áo Real lẫn PSG</a> <br />
+            <time><i style="font-size: 1.5vw;position: absolute;right: 2%; bottom: 2%;">15/02/2022 GMT+7</i></time> <br>
+        </div>
+        <div class="box">
+            <a href="./news/new2.html" target="_blank"><img align="left" src="./img/new2/8971256cbc2e55700c3f.jpg"
+                    alt="">Mbappe ra điều kiện để gia hạn hợp đồng với PSG</a> <br />
+            <time><i style="font-size: 1.5vw;position: absolute;right: 2%; bottom: 2%;">19/02/2022 GMT+7</i></time> <br>
+        </div>
+        <div class="box">
+            <a href="./news/new3.html"><img align="left"
+                    src="./img/new3/manchester-united-bruno-maguire-ronaldo_imwa.jpeg">Bruno Fernandes đổ dầu vào lửa
+                trong cuộc chiến quyền lực ở MU</a> <br />
+            <time><i style="font-size: 1.5vw;position: absolute;right: 2%; bottom: 2%;">19/02/2022 GMT+7</i></time> <br>
+        </div>
+        <h2>Bóng đá Việt Nam</h2>
+        <hr />
+        <div class="box">
+            <a href="./news/new1.html" target="_blank"><img align="left" src="./img/new1/hakimi-beckham-di-maria.jpg"
+                    alt="">Beckham, Di Maria và top sao từng khoác áo Real lẫn PSG</a> <br />
+            <time><i style="font-size: 1.5vw;position: absolute;right: 2%; bottom: 2%;">15/02/2022 GMT+7</i></time> <br>
+        </div>
+        <div class="box">
+            <a href="./news/new2.html" target="_blank"><img align="left" src="./img/new2/8971256cbc2e55700c3f.jpg"
+                    alt="">Mbappe ra điều kiện để gia hạn hợp đồng với PSG</a> <br />
+            <time><i style="font-size: 1.5vw;position: absolute;right: 2%; bottom: 2%;">19/02/2022 GMT+7</i></time> <br>
+        </div>
+        <div class="box">
+            <a href="./news/new3.html"><img align="left"
+                    src="./img/new3/manchester-united-bruno-maguire-ronaldo_imwa.jpeg">Bruno Fernandes đổ dầu vào lửa
+                trong cuộc chiến quyền lực ở MU</a> <br />
+            <time><i style="font-size: 1.5vw;position: absolute;right: 2%; bottom: 2%;">19/02/2022 GMT+7</i></time> <br>
+        </div>
+        <div class="article-page">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+        </div>
+    </article>
+    <footer>
+        <div class="option" align="center">
+            <a href="./index.html" target="_blank">BÓNG ĐÁ</a>
+            <a href="#">TENNIS</a>
+            <a href="#">VIDEO</a>
+            <a href="./index.html" target="_blank">TIN TỨC</a>
+        </div>
+        <div class="chiane">
+            <div>
+                <div class="container-page">
+                    <div class="fb-page" data-href="https://www.facebook.com/kaysport0401/" data-tabs="events"
+                        data-width="500px" data-height="" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/kaysport0401/" class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/kaysport0401/">Kay Sport</a></blockquote>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="chiane">
+                    <div class="info">
+                        <span style="font-weight: bold;font-size: larger;">Thông tin</span> <br>
+                        <hr style="border: none; background-color: white;width: 40%;">
+                        <span>Địa chỉ: Củ Chi, Thành phố Hồ Chí Minh <i class="fa-solid fa-acorn"></i> </span> <br>
+                        <span>SĐT: 0333664044</span> <br> <br>
+                        <i>Được thiết kế bởi Đào Khải Minh</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

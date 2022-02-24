@@ -1,0 +1,28 @@
+article{
+    float: right;
+    max-height: auto;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    width: 75%;
+    background-color: white;
+    padding: 0% 0.5%;
+    font-size: 2vw;
+}
+article>.news>h2{
+    text-align: center;
+}
+article>.news>img{
+    max-width: 70%;
+    display: block;
+    margin: 2% auto;
+}
+article>.fb-like{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+article>.fb-comments{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}

@@ -1,0 +1,48 @@
+article{
+    display: block;
+    height: auto;
+    background-color: white;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+article>.content-login{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+article>.form-login>form>hr{
+    background-color: black;
+    border: none;
+    height: 0.5%;
+    width: auto;
+    margin: 0%;
+    margin-top: 2%;
+}
+article>.form-login{
+    font-size: 2vw;
+    font-variant: small-caps;
+    font-weight: bold;
+    margin: 0 auto;
+}
+article>.form-login>form>input{
+    border-radius: 30px;
+    padding: 2%;
+    max-width: 50%;
+    max-height: 10%;
+    font-size: 2vw;
+    border: unset 0 0 4px black;
+}
+article>.form-login>form>input:focus{
+    border: unset 5px black
+}
+article>.form-login>form>button{
+    margin: 2% 8%;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-size: 2vw;
+    box-shadow: 0 0 1px black;
+    border: none;
+    padding: auto;
+}
+
+
